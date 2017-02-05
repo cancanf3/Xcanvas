@@ -27,13 +27,23 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        photo1.image = UIImage(named: "pug")
-        photo2.image = UIImage(named: "pug")
-        photo3.image = UIImage(named: "Corgi")
-        photo4.image = UIImage(named: "Corgi")
+        photo1.image = UIImage(named: "pic1")
+        photo2.image = UIImage(named: "pic2")
+        photo3.image = UIImage(named: "pic3")
+        photo4.image = UIImage(named: "pic4")
         
-        title1.text = "lol"
-        description1.text = "Lol"
+        title1.text = "Mountains"
+        description1.text = "Great view"
+        
+        title2.text = "Google Rejected me!"
+        description2.text = "I am so mad"
+        
+        title3.text = "Space"
+        description3.text = "the space is so big"
+        
+        title4.text = "Road"
+        description4.text = "Traveling"
+        
         
         // Do any additional setup after loading the view.
     }
@@ -45,7 +55,7 @@ class ViewController: UIViewController {
     
     @IBAction func showAction1(_ sender: UIButton) {
         
-        let photo = "Corgi"
+        let photo = "pic1"
         let title = title1.text
         let description = description1.text
         UserDefaults.standard.setValue(photo, forKey: "photo")
@@ -56,7 +66,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func showAction2(_ sender: UIButton) {
-        let photo = "pug"
+        let photo = "pic2"
         let title = title2.text
         let description = description2.text
         UserDefaults.standard.setValue(photo, forKey: "photo")
@@ -66,7 +76,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAction3(_ sender: UIButton) {
-        let photo = "pug"
+        let photo = "pic3"
         let title = title3.text
         let description = description3.text
         UserDefaults.standard.setValue(photo, forKey: "photo")
@@ -76,7 +86,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAction4(_ sender: UIButton) {
-        let photo = "pug"
+        let photo = "pic4"
         let title = title4.text
         let description = description4.text
         UserDefaults.standard.setValue(photo, forKey: "photo")

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		39E9307B1E46B78200DB9EAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9307A1E46B78200DB9EAB /* ViewController.swift */; };
 		39E930811E46C71300DB9EAB /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E930801E46C71300DB9EAB /* ContentViewController.swift */; };
+		39E930891E46FA0400DB9EAB /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E930881E46FA0400DB9EAB /* ShareViewController.swift */; };
+		39E9308C1E46FA0400DB9EAB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E9308A1E46FA0400DB9EAB /* MainInterface.storyboard */; };
+		39E930901E46FA0400DB9EAB /* extracting.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39E930861E46FA0400DB9EAB /* extracting.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		39FFC4D81E46989700BB1C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFC4D71E46989700BB1C25 /* AppDelegate.swift */; };
 		39FFC4DD1E46989700BB1C25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FFC4DB1E46989700BB1C25 /* Main.storyboard */; };
 		39FFC4DF1E46989700BB1C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FFC4DE1E46989700BB1C25 /* Assets.xcassets */; };
@@ -18,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		39E9308E1E46FA0400DB9EAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39FFC4CC1E46989600BB1C25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39E930851E46FA0400DB9EAB;
+			remoteInfo = extracting;
+		};
 		39FFC4E91E46989700BB1C25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 39FFC4CC1E46989600BB1C25 /* Project object */;
@@ -34,9 +44,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		39E930941E46FA0500DB9EAB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				39E930901E46FA0400DB9EAB /* extracting.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		39E9307A1E46B78200DB9EAB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		39E930801E46C71300DB9EAB /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentViewController.swift; path = ../ContentViewController.swift; sourceTree = "<group>"; };
+		39E930861E46FA0400DB9EAB /* extracting.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = extracting.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E930881E46FA0400DB9EAB /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		39E9308B1E46FA0400DB9EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		39E9308D1E46FA0400DB9EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39FFC4D41E46989700BB1C25 /* Xcanvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xcanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FFC4D71E46989700BB1C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FFC4DC1E46989700BB1C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +80,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		39E930831E46FA0400DB9EAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39FFC4D11E46989600BB1C25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,12 +111,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39E930871E46FA0400DB9EAB /* extracting */ = {
+			isa = PBXGroup;
+			children = (
+				39E930881E46FA0400DB9EAB /* ShareViewController.swift */,
+				39E9308A1E46FA0400DB9EAB /* MainInterface.storyboard */,
+				39E9308D1E46FA0400DB9EAB /* Info.plist */,
+			);
+			path = extracting;
+			sourceTree = "<group>";
+		};
 		39FFC4CB1E46989600BB1C25 = {
 			isa = PBXGroup;
 			children = (
 				39FFC4D61E46989700BB1C25 /* Xcanvas */,
 				39FFC4EB1E46989700BB1C25 /* XcanvasTests */,
 				39FFC4F61E46989700BB1C25 /* XcanvasUITests */,
+				39E930871E46FA0400DB9EAB /* extracting */,
 				39FFC4D51E46989700BB1C25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +138,7 @@
 				39FFC4D41E46989700BB1C25 /* Xcanvas.app */,
 				39FFC4E81E46989700BB1C25 /* XcanvasTests.xctest */,
 				39FFC4F31E46989700BB1C25 /* XcanvasUITests.xctest */,
+				39E930861E46FA0400DB9EAB /* extracting.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +178,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		39E930851E46FA0400DB9EAB /* extracting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39E930931E46FA0500DB9EAB /* Build configuration list for PBXNativeTarget "extracting" */;
+			buildPhases = (
+				39E930821E46FA0400DB9EAB /* Sources */,
+				39E930831E46FA0400DB9EAB /* Frameworks */,
+				39E930841E46FA0400DB9EAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = extracting;
+			productName = extracting;
+			productReference = 39E930861E46FA0400DB9EAB /* extracting.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		39FFC4D31E46989600BB1C25 /* Xcanvas */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39FFC4FC1E46989700BB1C25 /* Build configuration list for PBXNativeTarget "Xcanvas" */;
@@ -138,10 +202,12 @@
 				39FFC4D01E46989600BB1C25 /* Sources */,
 				39FFC4D11E46989600BB1C25 /* Frameworks */,
 				39FFC4D21E46989600BB1C25 /* Resources */,
+				39E930941E46FA0500DB9EAB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				39E9308F1E46FA0400DB9EAB /* PBXTargetDependency */,
 			);
 			name = Xcanvas;
 			productName = Xcanvas;
@@ -194,6 +260,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Xcanvas;
 				TargetAttributes = {
+					39E930851E46FA0400DB9EAB = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					39FFC4D31E46989600BB1C25 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -226,11 +296,20 @@
 				39FFC4D31E46989600BB1C25 /* Xcanvas */,
 				39FFC4E71E46989700BB1C25 /* XcanvasTests */,
 				39FFC4F21E46989700BB1C25 /* XcanvasUITests */,
+				39E930851E46FA0400DB9EAB /* extracting */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		39E930841E46FA0400DB9EAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E9308C1E46FA0400DB9EAB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39FFC4D21E46989600BB1C25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +337,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		39E930821E46FA0400DB9EAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E930891E46FA0400DB9EAB /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39FFC4D01E46989600BB1C25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +374,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		39E9308F1E46FA0400DB9EAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39E930851E46FA0400DB9EAB /* extracting */;
+			targetProxy = 39E9308E1E46FA0400DB9EAB /* PBXContainerItemProxy */;
+		};
 		39FFC4EA1E46989700BB1C25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 39FFC4D31E46989600BB1C25 /* Xcanvas */;
@@ -300,6 +392,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		39E9308A1E46FA0400DB9EAB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39E9308B1E46FA0400DB9EAB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		39FFC4DB1E46989700BB1C25 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -319,6 +419,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		39E930911E46FA0500DB9EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = extracting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Xcanvas.extracting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		39E930921E46FA0500DB9EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = extracting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Xcanvas.extracting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		39FFC4FA1E46989700BB1C25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -415,6 +539,7 @@
 		39FFC4FD1E46989700BB1C25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Xcanvas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -427,6 +552,7 @@
 		39FFC4FE1E46989700BB1C25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Xcanvas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -493,6 +619,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		39E930931E46FA0500DB9EAB /* Build configuration list for PBXNativeTarget "extracting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E930911E46FA0500DB9EAB /* Debug */,
+				39E930921E46FA0500DB9EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		39FFC4CF1E46989600BB1C25 /* Build configuration list for PBXProject "Xcanvas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

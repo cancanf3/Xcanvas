@@ -22,6 +22,7 @@ class ContentViewController: UIViewController {
         showPhoto.image = UIImage(named: (UserDefaults.standard.string(forKey: "photo"))!)
         showTitle.text = UserDefaults.standard.string(forKey: "title")
         showDescription.text = UserDefaults.standard.string(forKey: "description")
+        
 
         // Do any additional setup after loading the view.
     }
