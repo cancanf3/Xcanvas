@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Xcanvas
 //
-//  Created by Jose Pena on 2/4/17.
+//  Created by Jose Pena & Aaron Pengyang Wu on 2/4/17.
 //  Copyright © 2017 Xcanvas. All rights reserved.
 //
 

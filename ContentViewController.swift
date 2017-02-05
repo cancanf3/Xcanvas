@@ -2,7 +2,7 @@
 //  ContentViewController.swift
 //  Xcanvas
 //
-//  Created by Jose Pena on 2/4/17.
+//  Created by Jose Pena & Aaron Pengyang Wu on  2/4/17.
 //  Copyright © 2017 Xcanvas. All rights reserved.
 //
 
@@ -10,18 +10,14 @@ import UIKit
 
 class ContentViewController: UIViewController {
 
-    @IBOutlet weak var showPhoto: UIImageView!
-    @IBOutlet weak var showTitle: UITextField!
-    @IBOutlet weak var showDescription: UITextView!
-    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showPhoto.image = UIImage(named: (UserDefaults.standard.string(forKey: "photo"))!)
-        showTitle.text = UserDefaults.standard.string(forKey: "title")
-        showDescription.text = UserDefaults.standard.string(forKey: "description")
+        //showPhoto.image = UIImage(named: (UserDefaults.standard.string(forKey: "photo"))!)
+        //showTitle.text = UserDefaults.standard.string(forKey: "title")
+        //showDescription.text = UserDefaults.standard.string(forKey: "description")
         
 
         // Do any additional setup after loading the view.
